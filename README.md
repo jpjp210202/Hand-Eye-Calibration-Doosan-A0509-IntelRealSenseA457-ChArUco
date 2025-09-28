@@ -36,8 +36,6 @@ pip install -r requirements.txt
 
 ## 📂 Repository Structure
 
-## 📂 Repository Structure
-
 - **Hand-Eye-Calibration-Doosan-A0509-IntelRealSenseA457-ChArUco/**
   - **src/** – All Python scripts
     - `1.*` – Camera intrinsics & value checks
