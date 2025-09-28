@@ -36,36 +36,35 @@ pip install -r requirements.txt
 
 ## 📂 Repository Structure
 
-Hand-Eye-Calibration-Doosan-A0509-IntelRealSenseA457-ChArUco/
-│
-├── src/ # All Python scripts
-│ ├── 1.* # Camera intrinsics & value checks
-│ ├── 2.* # Image capture for calibration
-│ ├── 3.* # Calibration computation
-│ ├── 4.* # Updated calibration, math checks, validation
-│ ├── 4.6. Check_Calib.py # ✅ Final calibration verification
-│ ├── 4.9. LiveBoardPose_ID_Basis.py # ✅ Final pose validation per ID
-│ ├── 5.* # Additional calibration ID testing
-│ └── Test_Code_jpjp.py # Experimental/test script
-│
-├── data/
-│ ├── images/ # Captured images for calibration
-│ ├── intrinsics_images/ # Images for intrinsic calibration
-│ ├── poses/ # Robot base→tool poses & board poses
-│ ├── board_pose.txt # Saved rvec/tvec of board in camera frame
-│ ├── pose_live.txt # Current live robot base→tool pose
-│ ├── camera_intrinsics.npz # Intrinsic calibration (fx, fy, cx, cy, dist)
-│ └── handeye_T_tool_cam.txt # Final hand–eye transform (tool→camera)
-│
-├── docs/
-│ ├── ChArUco_297x210_5x7_30_22_DICT_4X4.pdf
-│ ├── ChArUco_420x297_6x9_30_22_DICT_4X4.pdf
-│ └── Project notes & calibration references
-│
-├── robodk/ # RoboDK project files (.rdk)
-├── cad/ # CAD models & drill files used
-├── requirements.txt
-└── README.md
+## 📂 Repository Structure
+
+- **Hand-Eye-Calibration-Doosan-A0509-IntelRealSenseA457-ChArUco/**
+  - **src/** – All Python scripts
+    - `1.*` – Camera intrinsics & value checks
+    - `2.*` – Image capture for calibration
+    - `3.*` – Calibration computation
+    - `4.*` – Updated calibration, math checks, validation
+      - `4.6. Check_Calib.py` – ✅ Final calibration verification
+      - `4.9. LiveBoardPose_ID_Basis.py` – ✅ Final pose validation per ID
+    - `5.*` – Additional calibration ID testing
+    - `Test_Code_jpjp.py` – Experimental/test script
+  - **data/**
+    - `images/` – Captured images for calibration
+    - `intrinsics_images/` – Images for intrinsic calibration
+    - `poses/` – Robot base→tool poses & board poses
+    - `board_pose.txt` – Saved rvec/tvec of board in camera frame
+    - `pose_live.txt` – Current live robot base→tool pose
+    - `camera_intrinsics.npz` – Intrinsic calibration (fx, fy, cx, cy, dist)
+    - `handeye_T_tool_cam.txt` – Final hand–eye transform (tool→camera)
+  - **docs/**
+    - `ChArUco_297x210_5x7_30_22_DICT_4X4.pdf`
+    - `ChArUco_420x297_6x9_30_22_DICT_4X4.pdf`
+    - Project notes & calibration references
+  - **robodk/** – RoboDK project files (.rdk)
+  - **cad/** – CAD models & drill files used
+  - `requirements.txt`
+  - `README.md`
+
 
 ## 📜 Python Scripts – Purpose
 
